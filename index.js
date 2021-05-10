@@ -15,7 +15,10 @@ const create = () => {
   mainWindow.loadFile("index.html");
   mainWindow.setMenu(null);
   dcClient.login({ clientId: "841407204312743967" }).then(() => {
-    dcClient.setActivity({ state: "Rickrollt sich selber" });
+    dcClient.setActivity({
+      state: "Rickrollt sich selber",
+      startTimestamp: Date.now(),
+    });
   });
 };
 
