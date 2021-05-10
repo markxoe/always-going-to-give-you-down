@@ -1,0 +1,44 @@
+{
+  "name": "always-going-to-give-you-down",
+  "version": "1.0.0",
+  "description": "Always going to give you down",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Mark Oude Elberink",
+  "devDependencies": {
+    "electron": "^12.0.7",
+    "electron-builder": "^22.11.1"
+  },
+  "dependencies": {},
+  "build": {
+    "productName": "Always going to give you down",
+    "copyright": "Copyright © 2021 Mark Oude Elberink",
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "markxoe",
+        "repo": "always-going-to-give-you-down"
+      }
+    ],
+    "nsis": {
+      "oneClick": "false",
+      "installerLanguages": [
+        "de_DE"
+      ]
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    }
+  }
+}
