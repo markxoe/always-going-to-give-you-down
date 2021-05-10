@@ -1,6 +1,6 @@
 {
   "name": "always-going-to-give-you-down",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Always going to give you down",
   "main": "index.js",
   "license": "MIT",
@@ -14,7 +14,9 @@
     "electron": "^12.0.7",
     "electron-builder": "22.9.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "discord-rpc": "^3.2.0"
+  },
   "build": {
     "productName": "Always going to give you down",
     "copyright": "Copyright © 2021 Mark Oude Elberink",
