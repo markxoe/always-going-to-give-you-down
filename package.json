@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Always going to give you down",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "start": "electron .",
     "build-win": "electron-builder -w -p never",
