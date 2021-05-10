@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder"
+    "build-win": "electron-builder -w -p never",
+    "publish-win": "electron-builder -w -p onTagOrDraft"
   },
   "author": "Mark Oude Elberink",
   "devDependencies": {
